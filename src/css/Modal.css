@@ -1,0 +1,70 @@
+.modal {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .2));
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+}
+
+.modal-contents {
+    padding: 1.3em;
+    border-radius: 5px;
+    width: 280px;
+    background-color: hsl(0, 0%, 100%)
+}
+
+.delete-comment {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(212, 24%, 26%);
+    margin-bottom: 1em;
+}
+
+.delete-warning {
+    font-size: .9rem;
+    text-transform: capitalize;
+    color: hsl(211, 10%, 45%);
+    line-height: 23px;
+    margin-bottom: 1em;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-container .delete,
+.buttons-container .cancel {
+    padding: 10px 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.buttons-container .delete {
+    background-color: hsl(358, 79%, 66%);
+}
+
+.buttons-container .cancel {
+    background-color: hsl(212, 24%, 26%);
+}
+
+.buttons-container .delete:hover {
+    background-color: hsl(358, 87%, 72%);
+}
+
+.buttons-container .cancel:hover {
+    background-color: hsl(213, 18%, 32%);
+}
+
+.buttons-container .delete:hover,
+.buttons-container .cancel:hover {
+    cursor: pointer;
+}

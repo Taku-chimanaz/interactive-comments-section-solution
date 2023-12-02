@@ -1,0 +1,163 @@
+.comment {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.3em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.comment__likes-container {
+    flex: .09;
+}
+
+.comment__content-container {
+    flex: .91;
+}
+
+.comment__likes-container__contents {
+    background-color: hsl(228, 33%, 97%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: .4em .5em;
+    border-radius: 30px;
+    width: fit-content;
+    height: 80%;
+}
+
+.plus-icon-container,
+.minus-icon-container {
+    border: none;
+    background-color: transparent;
+}
+
+.plus-icon-container:hover,
+.minus-icon-container:hover {
+    cursor: pointer;
+}
+
+.likes-counter {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.comment__content-container__header,
+.comment__content-container__header__user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-avatar-container {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.user-avatar-container>img {
+    width: 100%;
+}
+
+
+
+.user-username,
+.user-avatar-container {
+    margin-right: 11px;
+}
+
+.user-username {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.comment-date {
+    color: hsl(211, 10%, 45%);
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.comment-reply-btn,
+.delete-reply-btn,
+.edit-reply-btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+.comment-reply-btn:hover,
+.delete-reply-btn:hover,
+.edit-reply-btn:hover {
+    cursor: pointer;
+}
+
+
+
+.reply-icon-container {
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.reply-icon-container>img {
+    width: 100%;
+}
+
+.comment-reply-btn>p,
+.delete-reply-btn>p,
+.edit-reply-btn>p {
+    font-size: .9rem;
+    font-weight: 500;
+    color: hsl(238, 40%, 52%);
+}
+
+
+.delete-reply-btn>p {
+    color: red;
+}
+
+.comment-text {
+    margin-top: 1em;
+    color: hsl(211, 10%, 45%);
+    font-size: .9rem;
+    line-height: 23px;
+}
+
+.replies {
+    margin-top: .5em;
+    margin-left: 1.5em;
+    padding-left: 1em;
+    border-left: 1px solid hsl(223, 19%, 93%);
+}
+
+@media (max-width: 448px) {
+    .comment {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .comment__likes-container__contents {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        margin-top: 30px;
+    }
+
+    .delete-reply-btn,
+    .edit-reply-btn {
+        position: absolute;
+        bottom: 2em;
+        right: 1em;
+    }
+
+    .delete-reply-btn {
+        right: 6em;
+    }
+}

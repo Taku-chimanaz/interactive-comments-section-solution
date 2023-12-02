@@ -1,0 +1,57 @@
+.reply-input {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 1.3em;
+    border-radius: 5px;
+    display: flex;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.avatar-container {
+    flex: .1;
+    width: 15px;
+    height: 15px;
+}
+
+.avatar-container>img {
+    width: 100%;
+}
+
+.send-btn {
+    flex: .1;
+}
+
+.reply-input-container {
+    flex: .8;
+    border: 1px solid hsl(223, 19%, 93%);
+    border-radius: 5px;
+    padding: .5em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+
+}
+
+.reply-input-container>textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline-width: 0;
+}
+
+.send-btn {
+    border: none;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 13px 16px;
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    background-color: hsl(239, 57%, 85%);
+}
