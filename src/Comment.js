@@ -37,7 +37,7 @@ export const Comment = ({ comment, comments, setComments, user, parentCommentID 
         if (parentCommentID === null) {
             const targetComment = comments.filter(comm => comm.id === comment.id)[0];
             const filteredComments = comments.filter(comm => comm.id !== comment.id);
-            targetComment.score = scoreUp == 'up' ? comment.score + 1 : comment.score - 1;
+            targetComment.score = scoreUp === 'up' ? comment.score + 1 : comment.score - 1;
             const newComments = [...filteredComments, targetComment];
             const sortedComments = arrangeComments(newComments)
             localStorage.setItem('comments', JSON.stringify(sortedComments));
@@ -48,8 +48,7 @@ export const Comment = ({ comment, comments, setComments, user, parentCommentID 
             const filteredComments = comments.filter(comm => comm.id !== parentCommentID);
             const targetReply = parentComment.replies.filter(reply => reply.id === comment.id)[0];
             const filteredReplies = parentComment.replies.filter(reply => reply.id !== comment.id);
-            console.log(targetReply)
-            targetReply.score = scoreUp == 'up' ? targetReply.score + 1 : targetReply.score - 1;
+            targetReply.score = scoreUp === 'up' ? targetReply.score + 1 : targetReply.score - 1;
             const updatedReplies = arrangeComments([...filteredReplies, targetReply]);
             parentComment.replies = updatedReplies;
             const updatedComments = [...filteredComments, parentComment];

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './css/Reply.css';
 import { arrangeComments } from './sortArray';
 
@@ -40,7 +40,7 @@ export const ReplyInput = ({ user, btnType, comment, setComments, comments, comm
         }
 
         // editing original comment
-        if (isParent == true) {
+        if (isParent === true) {
             newComment.content = commentValue;
             const filteredComments = comments.filter(comm => comm.id !== comment.id);
             const sortedComments = arrangeComments([...filteredComments, newComment]);

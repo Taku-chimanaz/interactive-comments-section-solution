@@ -1,14 +1,13 @@
 import React from 'react'
 import { arrangeComments } from './sortArray'
 import './css/Modal.css'
-import { Children } from 'react'
 
 export const Modal = ({ setShowModalState, setComments, comments, comment, parentCommentID }) => {
 
 
     const deleteChoose = (e) => {
         const choice = e.target.innerHTML;
-        console.log(choice)
+
 
         if (choice === 'delete') {
             if (parentCommentID === null) {
