@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Taku-chimanaz/interactive-comments-section-solution)
+- Live Site URL: [Live](https://interactive-comments-solution.netlify.app/)
 
 ## My process
 - I implented the desktop view first and then the mobile view
